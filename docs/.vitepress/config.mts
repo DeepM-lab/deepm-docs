@@ -6,13 +6,14 @@ export default defineConfig({
   description: 'Trung tâm tài liệu & hướng dẫn sử dụng hệ sinh thái DeepM Tools',
   
   head: [
-    ['link', { rel: 'icon', href: '/logo.svg' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
     ['meta', { name: 'theme-color', content: '#f59e0b' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
   ],
 
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/logo.png',
     siteTitle: 'DeepM Docs',
 
     search: {
@@ -48,8 +49,8 @@ export default defineConfig({
       {
         text: 'Hệ sinh thái DeepM',
         items: [
-          { text: 'DeepM Lab (Công cụ lốp)', link: 'https://deepm.vn' },
-          { text: 'Marketing Tracker', link: 'https://form.deepm.vn' },
+          { text: 'DeepM Toolbox Engineering', link: 'https://toolbox-engineering.vercel.app/' },
+          { text: 'Marketing Tracker', link: 'https://marketing-tracker-navy.vercel.app/' },
           { text: 'Website DeepM.vn', link: 'https://deepm.vn' },
         ]
       }
