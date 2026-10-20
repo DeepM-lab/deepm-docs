@@ -25,7 +25,7 @@ graph TD
 * Xem bảng điều khiển tổng hợp toàn bộ bài viết của tất cả nhân sự.
 * Lọc báo cáo theo khoảng thời gian tùy chọn (Hôm nay, Tuần này, Tháng này, Quý này...).
 * Xuất file Excel báo cáo tổng thể.
-* Thêm mới nhân viên, cấp tài khoản, đổi quyền (`staff` $\leftrightarrow$ `admin`) hoặc vô hiệu hóa tài khoản khi nhân viên nghỉ việc.
+* Thêm mới nhân viên, cấp tài khoản, đổi quyền (`staff` ↔ `admin`) hoặc vô hiệu hóa tài khoản khi nhân viên nghỉ việc.
 
 ---
 
@@ -38,5 +38,5 @@ graph TD
 ---
 
 ::: tip 🔗 Đăng nhập hệ thống Marketing Tracker
-Truy cập trang đăng nhập tại [DeepM Marketing Tracker](https://form.deepm.vn) để bắt đầu phiên làm việc.
+Truy cập trang đăng nhập tại [DeepM Marketing Tracker](https://marketing-tracker-navy.vercel.app/) để bắt đầu phiên làm việc.
 :::

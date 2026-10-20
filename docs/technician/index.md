@@ -28,5 +28,5 @@ Khu vực này được biên soạn dành cho **Kỹ thuật viên xưởng đ�
 ---
 
 ::: tip 🔗 Mở giao diện công cụ xưởng
-Truy cập trực tiếp [DeepM Lab - Automotive Engineering Toolbox](https://deepm.vn) để bắt đầu sử dụng các công thức tính toán.
+Truy cập trực tiếp [DeepM Toolbox Engineering](https://toolbox-engineering.vercel.app/) để bắt đầu sử dụng các công thức tính toán.
 :::

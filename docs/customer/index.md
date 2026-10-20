@@ -24,10 +24,10 @@ graph LR
 
 * **[1. Đọc & Giải mã thông số lốp xe](/customer/reading-tire-specs)**: Cách sử dụng công cụ bóc tách tự động thông minh của DeepM Lab.
 * **[2. So sánh & Mô phỏng lên mâm (Visualizer)](/customer/tire-comparison-visualizer)**: Đặt 2 lốp đè lên nhau để so sánh kích thước thực tế.
-* **[3. Cảnh báo sai số đồng hồ tốc độ](/customer/speedometer-error)**: Bảng đối chiếu tốc độ thực tế và khuyến cáo an toàn tiêu chuẩn $\pm 3\%$.
+* **[3. Cảnh báo sai số đồng hồ tốc độ](/customer/speedometer-error)**: Bảng đối chiếu tốc độ thực tế và khuyến cáo an toàn tiêu chuẩn **±3%**.
 
 ---
 
 ::: tip 🔗 Truy cập nhanh công cụ
-Bạn có thể mở ngay công cụ giải mã lốp xe trực tuyến tại [DeepM Lab - Tire Fitment Decoder](https://deepm.vn) để vừa đọc hướng dẫn vừa thực hành song song.
+Bạn có thể mở ngay công cụ giải mã lốp xe trực tuyến tại [DeepM Toolbox Engineering](https://toolbox-engineering.vercel.app/) để vừa đọc hướng dẫn vừa thực hành song song.
 :::

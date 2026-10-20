@@ -22,16 +22,16 @@ Khi bạn muốn thay đổi kích cỡ lốp hoặc nâng cấp mâm xe (ví d�
 
 * <span class="step-badge">1</span> **Nhập thông số Lốp nguyên bản (Zin)**:
   * Điền 3 thông số của lốp đang dùng: **Rộng (mm)**, **Tỷ lệ (%)**, **Mâm (inch)** (Ví dụ: `205 / 55 / 16`).
-  * Hệ thống tự động tính ra đường kính bánh xe nguyên bản ($631.9\text{ mm}$) và chu vi lăn bánh ($1985.2\text{ mm}$).
+  * Hệ thống tự động tính ra đường kính bánh xe nguyên bản (**631.9 mm**) và chu vi lăn bánh (**1985.2 mm**).
 
 * <span class="step-badge">2</span> **Nhập thông số Lốp mới dự kiến lên**:
   * Điền kích thước lốp mới mà bạn muốn nâng cấp (Ví dụ: `225 / 50 / 17`).
-  * Xem ngay đường kính mới ($656.8\text{ mm}$) và chu vi mới ($2063.4\text{ mm}$).
+  * Xem ngay đường kính mới (**656.8 mm**) và chu vi mới (**2063.4 mm**).
 
 * <span class="step-badge">3</span> **Đọc bảng Kết quả đối sánh kỹ thuật (Geometric Delta)**:
-  * **Chênh lệch đường kính**: Thể hiện bánh xe to ra bao nhiêu ($+24.9\text{ mm}$, tương ứng $+3.94\%$).
-  * **Độ nâng khoảng sáng gầm**: Gầm xe sẽ tự động được nâng cao thêm $+12.4\text{ mm}$ do bán kính lốp lớn hơn.
-  * **Chênh lệch vòng quay bánh xe trên 1 km**: Bánh mới to hơn sẽ quay ít hơn (chỉ $485\text{ vòng/km}$ so với $504\text{ vòng/km}$ của lốp cũ).
+  * **Chênh lệch đường kính**: Thể hiện bánh xe to ra bao nhiêu (**+24.9 mm**, tương ứng **+3.94%**).
+  * **Độ nâng khoảng sáng gầm**: Gầm xe sẽ tự động được nâng cao thêm **+12.4 mm** do bán kính lốp lớn hơn.
+  * **Chênh lệch vòng quay bánh xe trên 1 km**: Bánh mới to hơn sẽ quay ít hơn (chỉ **485 vòng/km** so với **504 vòng/km** của lốp cũ).
 
 ---
 
@@ -46,5 +46,11 @@ Ví dụ nguyên tắc bù trừ kích thước:
 ```
 
 ::: tip 💡 Lời khuyên từ chuyên gia DeepM
-Nếu bạn chỉ đổi mâm mà không hạ tỷ lệ hông lốp tương ứng (ví dụ từ `205/55R16` lên `225/50R17`), đường kính tổng thể sẽ tăng tới $+3.94\%$. Mức sai lệch này vượt ngưỡng an toàn khuyến nghị $+3\%$, có thể gây cạ lốp khi đánh hết lái hoặc chở tải nặng.
+Nếu bạn chỉ đổi mâm mà không hạ tỷ lệ hông lốp tương ứng (ví dụ từ `205/55R16` lên `225/50R17`), đường kính tổng thể sẽ tăng tới **+3.94%**. Mức sai lệch này vượt ngưỡng an toàn khuyến nghị **+3%**, có thể gây cạ lốp khi đánh hết lái hoặc chở tải nặng.
+:::
+
+---
+
+::: tip 🔗 Thực hành trực tiếp
+Mở công cụ so sánh trực quan tại [DeepM Toolbox Engineering](https://toolbox-engineering.vercel.app/) để tính toán kích thước lốp của bạn ngay.
 :::

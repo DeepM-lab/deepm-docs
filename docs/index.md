@@ -6,7 +6,7 @@ hero:
   text: "Trung Tâm Hướng Dẫn & Tài Liệu Kỹ Thuật"
   tagline: "Hệ thống tra cứu thông số lốp xe an toàn, bộ công cụ tính toán cơ khí chuyên sâu và cổng quản trị truyền thông DeepM."
   image:
-    src: /logo.svg
+    src: /logo.png
     alt: DeepM Docs Logo
   actions:
     - theme: brand
@@ -69,9 +69,9 @@ features:
 
 | Nhóm đối tượng | Mục tiêu chính | Tính năng hướng dẫn trọng tâm | Ứng dụng liên kết |
 | :--- | :--- | :--- | :--- |
-| **1. Khách hàng (Chủ xe)** | Tra cứu & đối chiếu kích cỡ lốp an toàn | - Đọc và giải mã ký hiệu hông lốp.<br>- Mô phỏng trực quan 2 lốp đè lên nhau (Zin vs Độ).<br>- Bảng sai số đồng hồ tốc độ ODO ($\pm 3\%$). | [DeepM Lab - Tire Tools](https://deepm.vn) |
-| **2. Thợ máy & Kỹ thuật** | Đo lường, tính toán chuyên sâu cho xưởng | - Bàn tính 135 công thức kỹ thuật ô tô.<br>- Tra cứu Bách khoa toàn thư lốp xe & chẩn đoán góc mòn.<br>- Lưu trữ lịch sử và xuất file báo cáo Excel. | [DeepM Lab - Engineering](https://deepm.vn) |
-| **3. Marketing & Admin** | Quản lý & báo cáo hiệu quả truyền thông | - Nộp link bài đăng đa kênh (TikTok, Facebook, Shorts...).<br>- Theo dõi danh sách bài cá nhân (`/my-posts`).<br>- Dành riêng Admin: Duyệt bài, phân quyền nhân sự (`/admin/staff`), xuất file dữ liệu. | [Marketing Tracker](https://form.deepm.vn) |
+| **1. Khách hàng (Chủ xe)** | Tra cứu & đối chiếu kích cỡ lốp an toàn | - Đọc và giải mã ký hiệu hông lốp.<br>- Mô phỏng trực quan 2 lốp đè lên nhau (Zin vs Độ).<br>- Bảng sai số đồng hồ tốc độ ODO (±3%). | [DeepM Toolbox Engineering](https://toolbox-engineering.vercel.app/) |
+| **2. Thợ máy & Kỹ thuật** | Đo lường, tính toán chuyên sâu cho xưởng | - Bàn tính 135 công thức kỹ thuật ô tô.<br>- Tra cứu Bách khoa toàn thư lốp xe & chẩn đoán góc mòn.<br>- Lưu trữ lịch sử và xuất file báo cáo Excel. | [DeepM Toolbox Engineering](https://toolbox-engineering.vercel.app/) |
+| **3. Marketing & Admin** | Quản lý & báo cáo hiệu quả truyền thông | - Nộp link bài đăng đa kênh (TikTok, Facebook, Shorts...).<br>- Theo dõi danh sách bài cá nhân (`/my-posts`).<br>- Dành riêng Admin: Duyệt bài, phân quyền nhân sự (`/admin/staff`), xuất file dữ liệu. | [Marketing Tracker](https://marketing-tracker-navy.vercel.app/) |
 
 ::: tip 💡 Mẹo tra cứu nhanh
 Bạn có thể bấm tổ hợp phím <kbd>Ctrl</kbd> + <kbd>K</kbd> (hoặc chạm vào biểu tượng kính lúp trên góc phải) để tìm kiếm tức thì bất kỳ từ khóa kỹ thuật hoặc hướng dẫn thao tác nào.
