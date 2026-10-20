@@ -1,0 +1,145 @@
+:root {
+  --vp-c-brand-1: #f59e0b;
+  --vp-c-brand-2: #d97706;
+  --vp-c-brand-3: #b45309;
+  --vp-c-brand-soft: rgba(245, 158, 11, 0.16);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #fbbf24 30%, #f97316);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, rgba(245, 158, 11, 0.3) 30%, rgba(249, 115, 22, 0.3));
+  --vp-home-hero-image-filter: blur(48px);
+}
+
+.dark {
+  --vp-c-brand-1: #fbbf24;
+  --vp-c-brand-2: #f59e0b;
+  --vp-c-brand-3: #d97706;
+  --vp-c-brand-soft: rgba(251, 191, 36, 0.16);
+
+  --vp-c-bg: #0f1115;
+  --vp-c-bg-soft: #171920;
+  --vp-c-bg-mute: #20242d;
+  --vp-c-bg-alt: #13151b;
+}
+
+/* Numbered step badges [1], [2], [3] */
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #f59e0b, #ea580c);
+  color: #000;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  margin-right: 6px;
+  box-shadow: 0 2px 6px rgba(245, 158, 11, 0.4);
+}
+
+/* Screenshot mockup frame */
+.doc-screenshot-frame {
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  background: #171920;
+}
+
+.doc-screenshot-bar {
+  display: flex;
+  align-items: center;
+  padding: 8px 14px;
+  background: #111317;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 6px;
+}
+
+.doc-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.doc-dot.red { background: #ef4444; }
+.doc-dot.yellow { background: #eab308; }
+.doc-dot.green { background: #22c55e; }
+
+.doc-screenshot-title {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-left: 8px;
+  font-family: monospace;
+}
+
+.doc-screenshot-body {
+  position: relative;
+  overflow: hidden;
+}
+
+.doc-screenshot-body img {
+  width: 100%;
+  display: block;
+}
+
+/* Role portal cards in home */
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.role-card {
+  padding: 1.75rem;
+  border-radius: 14px;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-brand-soft);
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none !important;
+}
+
+.role-card:hover {
+  border-color: var(--vp-c-brand-1);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px -8px rgba(245, 158, 11, 0.2);
+}
+
+.role-card-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 9999px;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+
+.role-card h3 {
+  margin: 0 0 0.5rem 0 !important;
+  color: var(--vp-c-text-1);
+  font-size: 1.25rem !important;
+}
+
+.role-card p {
+  color: var(--vp-c-text-2);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 1.25rem 0;
+  flex-grow: 1;
+}
+
+.role-card-action {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
