@@ -10,13 +10,13 @@ hero:
     alt: DeepM Docs Logo
   actions:
     - theme: brand
-      text: "🚗 Dành cho Khách hàng"
+      text: "Dành cho Khách hàng"
       link: /customer/
     - theme: alt
-      text: "🔧 Thợ máy & Kỹ thuật"
+      text: "Thợ máy & Kỹ thuật"
       link: /technician/
     - theme: alt
-      text: "📊 Marketing & Admin"
+      text: "Marketing & Admin"
       link: /marketing/
 
 features:
@@ -37,7 +37,7 @@ features:
 <div class="role-grid">
   <a href="/customer/" class="role-card">
     <div class="role-card-badge">CỔNG DÀNH CHO KHÁCH HÀNG</div>
-    <h3>🚗 Chủ xe & Người tiêu dùng</h3>
+    <h3>Chủ xe & Người tiêu dùng</h3>
     <p>Dễ dàng tra cứu thông số lốp xe đang đi, hiểu rõ các ký hiệu kỹ thuật trên hông lốp, so sánh kích thước lốp Zin và lốp Độ, đồng thời nhận biết cảnh báo sai số đồng hồ tốc độ xe.</p>
     <div class="role-card-action">
       Xem hướng dẫn cho Chủ xe &rarr;
@@ -56,7 +56,7 @@ features:
   <a href="/marketing/" class="role-card">
     <div class="role-card-badge">CỔNG DÀNH CHO NỘI BỘ</div>
     <h3>📊 Đội ngũ Marketing & Quản trị</h3>
-    <p>Hướng dẫn nhân viên nộp link phân phối nội dung đa kênh (Facebook, TikTok, Shorts), theo dõi bài viết cá nhân và hướng dẫn Admin (<span style="color: var(--vp-c-brand-1)">vuonghongky26@gmail.com</span>) duyệt bài & phân quyền nhân sự.</p>
+    <p>Hướng dẫn nhân viên nộp link phân phối nội dung đa kênh (Facebook, TikTok, Shorts), theo dõi bài viết cá nhân và hướng dẫn Admin (<span style="color: var(--vp-c-brand-1)">abc@gmail.com</span>) duyệt bài & phân quyền nhân sự.</p>
     <div class="role-card-action">
       Xem tài liệu Marketing &rarr;
     </div>

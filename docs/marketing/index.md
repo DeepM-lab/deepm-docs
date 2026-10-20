@@ -21,7 +21,7 @@ graph TD
 * Cập nhật số liệu tương tác (Likes, Comments, Shares, Views) sau các mốc thời gian 24h, 3 ngày, 7 ngày.
 
 ### 2. Quản trị viên (`admin`):
-* Tài khoản quản trị chính thức: <span style="color: var(--vp-c-brand-1); font-weight: bold;">vuonghongky26@gmail.com</span>.
+* Tài khoản quản trị chính thức: <span style="color: var(--vp-c-brand-1); font-weight: bold;">abc@gmail.com</span>.
 * Xem bảng điều khiển tổng hợp toàn bộ bài viết của tất cả nhân sự.
 * Lọc báo cáo theo khoảng thời gian tùy chọn (Hôm nay, Tuần này, Tháng này, Quý này...).
 * Xuất file Excel báo cáo tổng thể.
