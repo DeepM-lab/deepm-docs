@@ -1,0 +1,8 @@
+node_modules
+docs/.vitepress/dist
+docs/.vitepress/cache
+dist
+cache
+.temp-chrome
+.DS_Store
+*.log
