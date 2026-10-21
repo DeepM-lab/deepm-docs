@@ -56,7 +56,7 @@ features:
   <a href="/marketing/" class="role-card">
     <div class="role-card-badge">CỔNG DÀNH CHO NỘI BỘ</div>
     <h3>📊 Đội ngũ Marketing & Quản trị</h3>
-    <p>Hướng dẫn nhân viên nộp link phân phối nội dung đa kênh (Facebook, TikTok, Shorts), theo dõi bài viết cá nhân và hướng dẫn Admin (<span style="color: var(--vp-c-brand-1)">abc@gmail.com</span>) duyệt bài & phân quyền nhân sự.</p>
+    <p>Hướng dẫn nhân viên nộp link phân phối nội dung đa kênh (Facebook, TikTok, Shorts), theo dõi bài viết cá nhân và hướng dẫn Quản trị viên (Admin) duyệt bài & phân quyền nhân sự nội bộ.</p>
     <div class="role-card-action">
       Xem tài liệu Marketing &rarr;
     </div>

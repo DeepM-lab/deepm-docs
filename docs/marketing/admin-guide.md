@@ -8,7 +8,7 @@ Trang hướng dẫn này dành riêng cho **Quản trị viên (Admin)** để 
 
 Để truy cập vào các khu vực quản trị tối cao (`/admin` và `/admin/staff`), bạn phải đăng nhập bằng tài khoản Admin đã được cấp quyền trong hệ thống cơ sở dữ liệu:
 
-* **Tài khoản Admin chính thức**: `abc@gmail.com`
+* **Tài khoản Admin chính thức**: Sử dụng tài khoản Email/Google Quản trị viên được cấp quyền trong cơ sở dữ liệu hệ thống (liên hệ bộ phận kỹ thuật nếu cần cấp mới hoặc nâng cấp quyền Super Admin).
 * **Cổng đăng nhập**: [https://marketing-tracker-navy.vercel.app/login](https://marketing-tracker-navy.vercel.app/login)
 
 <div class="doc-screenshot-frame">
