@@ -1,4 +1,4 @@
-# 3. Quản Lý Lịch Sử & Xuất File Excel
+# 5. Quản Lý Lịch Sử & Xuất File Excel
 
 Mỗi khi tính toán xong một hạng mục độ xe hoặc cân chỉnh cho khách, kỹ thuật viên có thể gom nhiều phép tính khác nhau vào một phiên làm việc và trích xuất thành **file bảng tính Excel (.xlsx)** chuẩn chỉnh.
 

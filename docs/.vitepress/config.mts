@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress';
+import { withMermaid } from 'vitepress-plugin-mermaid';
 
-export default defineConfig({
+export default withMermaid(
+  defineConfig({
   lang: 'vi-VN',
   title: 'DeepM Docs',
   description: 'Trung tâm tài liệu & hướng dẫn sử dụng hệ sinh thái DeepM Tools',
@@ -11,6 +13,10 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#f59e0b' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
   ],
+
+  markdown: {
+    math: true
+  },
 
   themeConfig: {
     logo: '/logo.png',
@@ -43,9 +49,9 @@ export default defineConfig({
 
     nav: [
       { text: 'Trang chủ', link: '/' },
-      { text: '🚗 Khách hàng', link: '/customer/' },
-      { text: '🔧 Thợ máy & Kỹ thuật', link: '/technician/' },
-      { text: '📊 Marketing & Quản trị', link: '/marketing/' },
+      { text: 'Khách hàng', link: '/customer/' },
+      { text: 'Thợ máy & Kỹ thuật', link: '/technician/' },
+      { text: 'Marketing & Quản trị', link: '/marketing/' },
       {
         text: 'Hệ sinh thái DeepM',
         items: [
@@ -59,29 +65,62 @@ export default defineConfig({
     sidebar: {
       '/customer/': [
         {
-          text: '🚗 Dành cho Khách hàng & Chủ xe',
+          text: 'Giới thiệu & Tổng quan',
           items: [
-            { text: 'Tổng quan & Giới thiệu', link: '/customer/' },
+            { text: 'Cổng thông tin Khách hàng & Chủ xe', link: '/customer/' },
+          ]
+        },
+        {
+          text: '1. Tính toán & Mô phỏng kích thước',
+          items: [
             { text: '1. Đọc & Giải mã thông số lốp', link: '/customer/reading-tire-specs' },
             { text: '2. So sánh & Mô phỏng lên mâm', link: '/customer/tire-comparison-visualizer' },
             { text: '3. Cảnh báo sai số đồng hồ tốc độ', link: '/customer/speedometer-error' },
+          ]
+        },
+        {
+          text: '2. Kiểm tra an toàn & Bảo dưỡng',
+          items: [
+            { text: '4. Mã năm sản xuất DOT & Tuổi thọ lốp', link: '/customer/dot-date-age' },
+            { text: '5. Áp suất lốp & Quy đổi đơn vị', link: '/customer/tire-pressure-guide' },
+            { text: '6. Dấu hiệu mòn lốp & Khi nào cần thay', link: '/customer/tire-wear-inspection' },
+          ]
+        },
+        {
+          text: '3. Cẩm nang chọn lốp & Hỗ trợ',
+          items: [
+            { text: '7. Phân loại dòng lốp: HT, AT, MT, EV', link: '/customer/tire-terrain-types' },
+            { text: '8. Tiêu chuẩn UTQG & OE Hãng xe', link: '/customer/utqg-oe-markings' },
+            { text: '9. Hướng dẫn liên hệ hỗ trợ kỹ thuật', link: '/customer/contact-support' },
           ]
         }
       ],
       '/technician/': [
         {
-          text: '🔧 Dành cho Thợ máy & Kỹ thuật',
+          text: 'Tổng quan & Công cụ tính toán',
           items: [
-            { text: 'Tổng quan kỹ thuật', link: '/technician/' },
-            { text: '1. Bộ công cụ tính toán (Mechanic Tools)', link: '/technician/mechanic-tools' },
-            { text: '2. Bách khoa toàn thư thuật ngữ lốp', link: '/technician/tire-encyclopedia' },
-            { text: '3. Quản lý lịch sử & Xuất file Excel', link: '/technician/export-excel' },
+            { text: 'Tổng quan Cổng Kỹ thuật', link: '/technician/' },
+            { text: '1. Bộ công cụ tính toán (135 Tools)', link: '/technician/mechanic-tools' },
+          ]
+        },
+        {
+          text: 'Hệ thống điện & Chẩn đoán sớm',
+          items: [
+            { text: '2. Phụ tải điện & Máy phát 210A', link: '/technician/alternator-210a-power' },
+            { text: '3. Chẩn đoán sớm (Sensor Fusion)', link: '/technician/sensor-fusion-diagnostics' },
+          ]
+        },
+        {
+          text: 'Khung gầm, Lốp xe & Báo cáo xưởng',
+          items: [
+            { text: '4. Bách khoa toàn thư lốp & Dấu hiệu mòn', link: '/technician/tire-encyclopedia' },
+            { text: '5. Quản lý lịch sử & Xuất file Excel', link: '/technician/export-excel' },
           ]
         }
       ],
       '/marketing/': [
         {
-          text: '📊 Dành cho Marketing & Quản trị',
+          text: 'Dành cho Marketing & Quản trị',
           items: [
             { text: 'Tổng quan Marketing Portal', link: '/marketing/' },
             { text: '1. Nhập & Nộp link bài truyền thông', link: '/marketing/submit-post' },
@@ -108,4 +147,4 @@ export default defineConfig({
       copyright: 'Copyright © 2026 DeepM Lab. All rights reserved.'
     }
   }
-});
+}));

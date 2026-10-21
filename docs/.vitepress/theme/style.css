@@ -10,6 +10,18 @@
   --vp-home-hero-image-filter: blur(48px);
 }
 
+.mermaid svg {
+  font-family: var(--vp-font-family-base) !important;
+}
+
+.mermaid .nodeLabel,
+.mermaid .edgeLabel,
+.mermaid .cluster-label,
+.mermaid text,
+.mermaid span {
+  font-family: var(--vp-font-family-base) !important;
+}
+
 .dark {
   --vp-c-brand-1: #fbbf24;
   --vp-c-brand-2: #f59e0b;

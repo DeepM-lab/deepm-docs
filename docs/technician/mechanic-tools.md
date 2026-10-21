@@ -1,6 +1,6 @@
 # 1. Bộ Công Cụ Tính Toán (Mechanic Tools)
 
-Phần mềm **DeepM Engineering Toolbox** tổng hợp 135 công thức tính toán cơ khí ô tô thực nghiệm được chuẩn hóa vào giao diện trực quan, giúp kỹ thuật viên garage loại bỏ việc phải bấm máy tính tay hoặc nhớ công thức phức tạp.
+Phần mềm **DeepM Engineering Toolbox** tổng hợp **135 công thức tính toán cơ khí ô tô thực nghiệm** được chuẩn hóa vào giao diện trực quan, giúp kỹ thuật viên garage loại bỏ việc phải bấm máy tính tay hoặc nhớ công thức phức tạp.
 
 ---
 
@@ -23,18 +23,12 @@ Phần mềm **DeepM Engineering Toolbox** tổng hợp 135 công thức tính t
 * <span class="step-badge">1</span> **Nhập Hồ sơ xe & Báo cáo kỹ thuật (Garage Client Record)**:
   * Điền thông tin khách hàng vào thanh hồ sơ đầu trang:
     * **Chủ xe / Khách hàng**: Ví dụ `Anh ABC - DeepM`.
-    * **Dòng xe & Động cơ**: Ví dụ `Mitsubishi Triton 4N15 / Land Cruiser LC80`.
+    * **Dòng xe & Động cơ**: Ví dụ `Mitsubishi Triton 4N15 / Land Cruiser LC80 / Ford Ranger 2.0 Bi-Turbo`.
     * **Biển số kiểm soát**: Ví dụ `30K-888.88`.
   * Các thông tin này sẽ được tự động đồng bộ vào đầu file Excel khi bạn xuất báo cáo.
 
 * <span class="step-badge">2</span> **Chọn Chuyên đề kỹ thuật hoặc Tìm kiếm mã Tool**:
-  * Bấm vào 12 tab chuyên đề (hoặc gõ mã `DM-001` vào ô tìm kiếm nhanh):
-    * `01. OFF-ROAD & 4X4`: Tỷ số truyền bò, độ dốc tới hạn, lực kéo tời tời cứu hộ.
-    * `02. CAR AUDIO & SPL`: Độ nhạy loa, thể tích thùng sub hơi, công suất ampli RMS.
-    * `03. CAMPING & RV`: Công suất sạc tấm pin năng lượng mặt trời, tủ lạnh 12V.
-    * `04. PERFORMANCE & TUNING`: Tỷ số nén, thể tích buồng đốt, lưu lượng kim phun nhiên liệu.
-    * `05. DRIFT & RACING`: Góc Camber, Toe-out, phân bổ áp suất lốp theo nhiệt độ mặt đường.
-    * `06. WHEEL FITMENT`: Độ nhô mâm Offset (ET), khoảng cách lòng phuộc và mép vè.
+  * Bấm vào 12 tab chuyên đề (hoặc gõ mã `DM-001` đến `DM-135` vào ô tìm kiếm nhanh).
 
 * <span class="step-badge">3</span> **Vận hành bàn tính (Calculator)**:
   * Chọn công cụ cần tính ở cột danh sách bên trái (Ví dụ: `[DM-001] Crawl ratio tổng`).
@@ -43,8 +37,72 @@ Phần mềm **DeepM Engineering Toolbox** tổng hợp 135 công thức tính t
 
 ---
 
+## 📚 Tổng quan 12 Bộ công cụ kỹ thuật (135 Tools)
+
+Toàn bộ 135 công cụ được phân bổ vào 12 lĩnh vực kỹ thuật chuyên sâu theo tiêu chuẩn xưởng độ và garage hiện đại:
+
+| Nhóm | Tên bộ công cụ | Đối tượng ứng dụng | Số Tool | Các công thức tiêu biểu |
+| :---: | :--- | :--- | :---: | :--- |
+| **01** | **Off-road & 4x4** | Độ xe vượt địa hình, xe thi đấu VOC/HTV, overlanding | 12 | Crawl ratio tổng, lực kéo tiếp tuyến bánh, góc tới/thoát/vượt đỉnh, tời kéo dốc, năng lượng pin tời |
+| **02** | **Car Audio & SPL** | Độ âm thanh SQ/SQL/SPL, đóng thùng sub hơi/kín | 12 | Thể tích thùng chữ nhật, thể tích $V_b$ theo $Q_{tc}$, tần số cắt $F_3$, cổng hơi Helmholtz, công suất RMS amply |
+| **03** | **Camping & RV** | Xe hoán cải Mobihome, xe dã ngoại Camper, Caravan | 12 | Cân bằng năng lượng ngày (Wh), dung lượng pin LiFePO4, dòng vào Inverter, sản lượng PVWatts pin mặt trời |
+| **04** | **Performance & Tuning** | Tinh chỉnh động cơ, độ tăng áp Turbo/Supercharger, map ECU | 12 | Dung tích động cơ $V_d$, tỷ số nén tĩnh $CR$, tốc độ piston trung bình $U_p$, BMEP 4 kỳ, lưu lượng kim phun |
+| **05** | **Drift & Racing** | Xe chạy track day, đua drift, drag strip 402m | 10 | Tỷ số truyền tổng, RPM khi lên số, chuyển tải dọc khi phanh, lực cản khí động $F_d$, độ cứng Wheel Rate |
+| **06** | **Wheel & Tire** | Nâng cấp mâm lốp, độ lồi mâm (ET Offset), canh vè | 10 | Đường kính danh nghĩa, chu vi lốp, sai số công-tơ-mét, backspacing danh nghĩa, độ ăn sâu mép trong/ngoài |
+| **07** | **Automotive Electrical** | Thợ điện ô tô, nâng cấp máy phát 210A, phân phối tải | 12 | Công suất DC/cơ máy phát, tỷ số pulley, RPM rotor, tổn hao đồng stator, tổn hao diode, sụt áp dây điện |
+| **08** | **Battery & Storage** | Thiết kế pack pin LiFePO4 / Sodium-ion, BMS | 12 | Cấu hình ghép chuỗi Ns/song song Np, dòng xả C-rate, nội trở pack, nhiệt lượng phát sinh Joule $I^2R$, thời gian sạc CC |
+| **09** | **Mechanical & Fabrication** | Chế tạo cơ khí, gá hàn khung xe, ben thủy lực nâng hạ | 12 | Ứng suất uốn $\sigma = My/I$, độ võng dầm $\delta$, lực xi lanh thủy lực, tuổi thọ vòng bi $L_{10}$ (ISO 281) |
+| **10** | **EV & Hybrid** | Hoán cải xe điện (EV Retrofit), xe lai sạc ngoài | 10 | Công suất/mô-men mô-tơ điện, dòng bus DC cao áp, suất tiêu hao điện Wh/km, quãng đường xe điện, phanh tái sinh |
+| **11** | **Detailing & Bodywork** | Sơn phủ chống xước Polyurea, dán cách âm, làm đồng | 11 | Diện tích bề mặt, độ dày màng sơn khô (DFT)/ướt (WFT), lượng sơn cần mua, tỷ lệ pha 2 thành phần A:B, dẫn nhiệt |
+| **12** | **Garage & Maintenance** | Bảo dưỡng định kỳ, quản lý chi phí vận hành đội xe | 10 | Quy đổi mô-men siết (lbf.ft $\to$ Nm), lực kích nâng xe, áp suất piston ben nâng, suất tiêu hao xăng/dầu trên 100km |
+
+---
+
+## 📐 Nguyên tắc chuẩn hóa công thức & Đơn vị đo lường
+
+Hệ thống tính toán DeepM tuân thủ nghiêm ngặt các nguyên tắc vật lý thực nghiệm:
+
+1. **Hệ đơn vị đo lường SI chuẩn hóa**:
+   * Áp suất: **Pa** hoặc **Bar** ($1\text{ Bar} = 100\text{ kPa} = 10^5\text{ Pa}$).
+   * Chiều dài / Kích thước: Mặc định milimet (**mm**) đối với lốp mâm cơ khí; mét (**m**) đối với khí động học và hệ treo.
+   * Công suất: kilowatt (**kW**) hoặc mã lực (**HP**).
+   * Góc: Radian (**rad**) trong tính toán giải tích và Độ (**deg**) khi hiển thị trên giao diện người dùng.
+2. **Quy tắc nhập tỷ số hiệu suất**:
+   * Các hệ số hiệu suất truyền động ($\eta$), hệ số công suất ($PF$), độ sâu xả pin ($DoD$) bắt buộc nhập dưới dạng thập phân trong khoảng **0.0 đến 1.0** (ví dụ: hiệu suất 85% nhập là `0.85`, không nhập `85`).
+3. **Phân loại độ tin cậy của thuật toán**:
+   * **Chuẩn hình học / Chuẩn định nghĩa**: Tính toán tuyệt đối theo kích thước hình học giải tích (ví dụ: thể tích thùng loa, đường kính mâm lốp, tỷ số truyền crawl ratio).
+   * **Chuẩn mô hình**: Dựa trên mô hình vật lý lý thuyết chuẩn quốc tế (ví dụ: định luật Ohm, mô hình Thiele/Small, Darcy-Weisbach).
+   * **Mô hình ước lượng**: Áp dụng hệ số thực nghiệm dành cho kỹ thuật viên xưởng tham khảo trước khi gia công chế tạo thực tế.
+
+---
+
 ## 🔬 Chế độ Kiểm thử Nghiệm chứng (Verification Mode)
 
-Trên thanh công cụ phía trên bên phải, bạn có thể chuyển đổi giữa:
-* **Bàn tính (135)**: Dành cho kỹ thuật viên nhập dữ liệu thực tế tại xưởng.
-* **Nghiệm chứng (12)**: Dành cho việc đối chiếu với 12 case study xe thực nghiệm đã được kỹ sư DeepM Lab đo kiểm trên đường chạy thực tế.
+Để đảm bảo tính chuẩn xác tuyệt đối trước khi ứng dụng vào việc nâng cấp xe đắt tiền, DeepM cung cấp chế độ **Nghiệm chứng (Verification Mode)**. Bảng dưới đây là 12 bài toán kiểm thử mẫu được lập trình sẵn trên hệ thống với tỷ lệ sai lệch bằng 0:
+
+| Chuyên đề | Tên phép thử kiểm nghiệm | Biến đầu vào thực tế | Giá trị tính toán | Mốc chuẩn đối chiếu | Kết quả |
+| :--- | :--- | :--- | :---: | :---: | :---: |
+| **01. Off-road** | Tỷ số truyền bò Crawl $1 \times 2.7 \times 4.1$ | Số 1: `1.0`, Hộp phụ 4L: `2.7`, Cầu: `4.1` | **11.07** | 11.07 | <span class="badge-pass">PASS</span> |
+| **02. Audio** | Thể tích thùng sub chữ nhật $100 \times 80 \times 8$ cm | $L=100$, $W=80$, $H=8$ cm | **64.0 L** | 64.0 L | <span class="badge-pass">PASS</span> |
+| **03. Camping** | Năng lượng pin Lithium 24V 200Ah | Điện áp: `24V`, Dung lượng: `200Ah` | **4.800 Wh** | 4.800 Wh | <span class="badge-pass">PASS</span> |
+| **04. Tuning** | Dung tích máy 6 xi-lanh ($B=95$mm, $S=85$mm) | Bore: `95mm`, Stroke: `85mm`, Số máy: `6` | **3.615 L** | 3.615 L | <span class="badge-pass">PASS</span> |
+| **05. Racing** | Lực cản khí động ở tốc độ 72 km/h ($20$ m/s) | $\rho=1.2$, $C_d=0.3$, $A=2.2\text{ m}^2$, $v=20\text{ m/s}$ | **158.4 N** | 158.4 N | <span class="badge-pass">PASS</span> |
+| **06. Fitment** | Đường kính lốp cỡ 285/70R17 | Mâm: `17 inch`, Rộng: `285mm`, Tỷ lệ: `70%` | **830.8 mm** | 830.8 mm | <span class="badge-pass">PASS</span> |
+| **07. Electrical** | Công suất máy phát DC 14.4V dòng 390A | Điện áp: `14.4V`, Cường độ dòng: `390A` | **5.616 W** | 5.616 W | <span class="badge-pass">PASS</span> |
+| **08. Battery** | Năng lượng pack pin 4S4P cell 3.2V 20Ah | $N_s=4$, $N_p=4$, Cell: `3.2V 20Ah` | **1.024 Wh** | 1.024 Wh | <span class="badge-pass">PASS</span> |
+| **09. Mechanical**| Công suất bơm thủy lực 200 bar lưu lượng 10 L/p | Áp suất: `200 bar`, Lưu lượng: `10 L/min` | **3.33 kW** | 3.33 kW | <span class="badge-pass">PASS</span> |
+| **10. EV** | Công suất mô-tơ điện 100 Nm tại 3000 rpm | Momen xoắn: `100 Nm`, Tốc độ: `3000 rpm` | **31.42 kW** | 31.42 kW | <span class="badge-pass">PASS</span> |
+| **11. Detailing** | Lượng sơn phủ Polyurea sàn xe 12 m² dày 0.5 mm | Diện tích: `12 m²`, Chiều dày ướt: `0.5 mm` | **6.0 L** | 6.0 L | <span class="badge-pass">PASS</span> |
+| **12. Garage** | Chi phí xăng cho xe ăn 8L/100km giá 25.000đ/L | Định mức: `8.0 L/100km`, Giá: `25.000đ/L` | **2.000 đ/km** | 2.000 đ/km | <span class="badge-pass">PASS</span> |
+
+---
+
+## 🌐 Nguồn đối chiếu tiêu chuẩn quốc tế
+
+Mỗi thuật toán tính toán trong DeepM Lab được đối chiếu từ 2 nguồn khoa học cơ sở:
+
+* **EngineeringToolbox (Cơ khí & Thủy lực)**: Cơ sở dữ liệu động lực học góc quay, mô-men xoắn, sụt áp dây dẫn DC và tính toán dầm chịu lực kết cấu chassis.
+* **NASA Glenn Research Center (Khí động học)**: Phương trình lực cản khí động Drag Equation tiêu chuẩn hàng không vũ trụ ($F_d = \frac{1}{2}\rho C_d A v^2$).
+* **Battery University (Năng lượng & Pin Lithium)**: Tiêu chuẩn sạc xả C-rate, ghép mảng pin LiFePO4 / Sodium-ion và bảo vệ tế bào pin qua BMS.
+* **SKF Rolling Bearings Guide (Tuổi thọ vòng bi ISO 281)**: Công thức tính toán độ bền mỏi vòng bi ổ lăn moay-ơ trục xe tải và xe đua.
+* **NREL PVWatts V8 (Năng lượng mặt trời di động)**: Mô hình ước tính sản lượng giờ nắng đỉnh (Peak Sun Hours) cho tấm pin PV dán nóc xe camper.

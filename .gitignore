@@ -6,3 +6,4 @@ cache
 .temp-chrome
 .DS_Store
 *.log
+.notes/
