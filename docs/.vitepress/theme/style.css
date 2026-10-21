@@ -34,6 +34,73 @@
   --vp-c-bg-alt: #13151b;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-brand-soft);
+  border-radius: 9999px;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-brand-1);
+}
+
+/* 3D Keycap Keyboard Shortcut Styling */
+kbd {
+  display: inline-block;
+  padding: 2px 7px;
+  margin: 0 2px;
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.82em;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-mute);
+  border: 1px solid var(--vp-c-divider);
+  border-bottom: 2px solid var(--vp-c-brand-1);
+  border-radius: 6px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+  vertical-align: baseline;
+}
+
+/* Modern Responsive Table Styling */
+.vp-doc table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  border: 1px solid var(--vp-c-divider);
+  margin: 1.5rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.vp-doc th {
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-brand-1);
+  font-weight: 700;
+  border-bottom: 2px solid var(--vp-c-brand-soft);
+  padding: 10px 14px;
+  white-space: nowrap;
+}
+
+.vp-doc td {
+  padding: 10px 14px;
+  border-top: 1px solid var(--vp-c-divider);
+  transition: background-color 0.15s ease;
+}
+
+.vp-doc tr:hover td {
+  background: var(--vp-c-bg-soft);
+}
+
 /* Numbered step badges [1], [2], [3] */
 .step-badge {
   display: inline-flex;
@@ -84,6 +151,9 @@
   color: #94a3b8;
   margin-left: 8px;
   font-family: monospace;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .doc-screenshot-body {
@@ -154,4 +224,24 @@
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+/* Responsive Media Queries for Mobile & Tablets */
+@media (max-width: 768px) {
+  .role-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .role-card {
+    padding: 1.25rem;
+  }
+
+  .doc-screenshot-frame {
+    margin: 1rem 0;
+  }
+
+  .doc-screenshot-bar {
+    padding: 6px 10px;
+  }
 }
