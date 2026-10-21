@@ -39,6 +39,9 @@ export default withMermaid(
         rollupOptions: {
           output: {
             manualChunks(id) {
+              if (id.includes('.vitepress') || id.includes('node_modules/vue')) {
+                return;
+              }
               if (id.includes('mermaid') || id.includes('cytoscape')) {
                 return 'vendor-visual';
               }
@@ -134,6 +137,24 @@ export default withMermaid(
             items: [
               { text: 'Tổng quan Cổng Kỹ thuật', link: '/technician/' },
               { text: '1. Bộ công cụ tính toán (135 Tools)', link: '/technician/mechanic-tools' },
+            ]
+          },
+          {
+            text: '12 Chuyên đề Kỹ thuật (135 Tools)',
+            collapsed: false,
+            items: [
+              { text: '01. Off-road & 4x4 (DM-001 - DM-012)', link: '/technician/tools/01-offroad-4x4' },
+              { text: '02. Car Audio & SPL (DM-013 - DM-024)', link: '/technician/tools/02-car-audio-spl' },
+              { text: '03. Camping & RV (DM-025 - DM-036)', link: '/technician/tools/03-camping-rv' },
+              { text: '04. Performance Tuning (DM-037 - DM-048)', link: '/technician/tools/04-performance-tuning' },
+              { text: '05. Drift & Racing (DM-049 - DM-058)', link: '/technician/tools/05-drift-racing' },
+              { text: '06. Wheel & Tire (DM-059 - DM-068)', link: '/technician/tools/06-wheel-tire' },
+              { text: '07. Automotive Electrical (DM-069 - DM-080)', link: '/technician/tools/07-automotive-electrical' },
+              { text: '08. Battery & Storage (DM-081 - DM-092)', link: '/technician/tools/08-battery-storage' },
+              { text: '09. Mechanical Fabrication (DM-093 - DM-104)', link: '/technician/tools/09-mechanical-fabrication' },
+              { text: '10. EV & Hybrid (DM-105 - DM-114)', link: '/technician/tools/10-ev-hybrid' },
+              { text: '11. Detailing & Bodywork (DM-115 - DM-125)', link: '/technician/tools/11-detailing-bodywork' },
+              { text: '12. Garage & Maintenance (DM-126 - DM-135)', link: '/technician/tools/12-garage-maintenance' },
             ]
           },
           {

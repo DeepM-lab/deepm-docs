@@ -41,20 +41,20 @@ Phần mềm **DeepM Engineering Toolbox** tổng hợp **135 công thức tính
 
 Toàn bộ 135 công cụ được phân bổ vào 12 lĩnh vực kỹ thuật chuyên sâu theo tiêu chuẩn xưởng độ và garage hiện đại:
 
-| Nhóm | Tên bộ công cụ | Đối tượng ứng dụng | Số Tool | Các công thức tiêu biểu |
-| :---: | :--- | :--- | :---: | :--- |
-| **01** | **Off-road & 4x4** | Độ xe vượt địa hình, xe thi đấu VOC/HTV, overlanding | 12 | Crawl ratio tổng, lực kéo tiếp tuyến bánh, góc tới/thoát/vượt đỉnh, tời kéo dốc, năng lượng pin tời |
-| **02** | **Car Audio & SPL** | Độ âm thanh SQ/SQL/SPL, đóng thùng sub hơi/kín | 12 | Thể tích thùng chữ nhật, thể tích $V_b$ theo $Q_{tc}$, tần số cắt $F_3$, cổng hơi Helmholtz, công suất RMS amply |
-| **03** | **Camping & RV** | Xe hoán cải Mobihome, xe dã ngoại Camper, Caravan | 12 | Cân bằng năng lượng ngày (Wh), dung lượng pin LiFePO4, dòng vào Inverter, sản lượng PVWatts pin mặt trời |
-| **04** | **Performance & Tuning** | Tinh chỉnh động cơ, độ tăng áp Turbo/Supercharger, map ECU | 12 | Dung tích động cơ $V_d$, tỷ số nén tĩnh $CR$, tốc độ piston trung bình $U_p$, BMEP 4 kỳ, lưu lượng kim phun |
-| **05** | **Drift & Racing** | Xe chạy track day, đua drift, drag strip 402m | 10 | Tỷ số truyền tổng, RPM khi lên số, chuyển tải dọc khi phanh, lực cản khí động $F_d$, độ cứng Wheel Rate |
-| **06** | **Wheel & Tire** | Nâng cấp mâm lốp, độ lồi mâm (ET Offset), canh vè | 10 | Đường kính danh nghĩa, chu vi lốp, sai số công-tơ-mét, backspacing danh nghĩa, độ ăn sâu mép trong/ngoài |
-| **07** | **Automotive Electrical** | Thợ điện ô tô, nâng cấp máy phát 210A, phân phối tải | 12 | Công suất DC/cơ máy phát, tỷ số pulley, RPM rotor, tổn hao đồng stator, tổn hao diode, sụt áp dây điện |
-| **08** | **Battery & Storage** | Thiết kế pack pin LiFePO4 / Sodium-ion, BMS | 12 | Cấu hình ghép chuỗi Ns/song song Np, dòng xả C-rate, nội trở pack, nhiệt lượng phát sinh Joule $I^2R$, thời gian sạc CC |
-| **09** | **Mechanical & Fabrication** | Chế tạo cơ khí, gá hàn khung xe, ben thủy lực nâng hạ | 12 | Ứng suất uốn $\sigma = My/I$, độ võng dầm $\delta$, lực xi lanh thủy lực, tuổi thọ vòng bi $L_{10}$ (ISO 281) |
-| **10** | **EV & Hybrid** | Hoán cải xe điện (EV Retrofit), xe lai sạc ngoài | 10 | Công suất/mô-men mô-tơ điện, dòng bus DC cao áp, suất tiêu hao điện Wh/km, quãng đường xe điện, phanh tái sinh |
-| **11** | **Detailing & Bodywork** | Sơn phủ chống xước Polyurea, dán cách âm, làm đồng | 11 | Diện tích bề mặt, độ dày màng sơn khô (DFT)/ướt (WFT), lượng sơn cần mua, tỷ lệ pha 2 thành phần A:B, dẫn nhiệt |
-| **12** | **Garage & Maintenance** | Bảo dưỡng định kỳ, quản lý chi phí vận hành đội xe | 10 | Quy đổi mô-men siết (lbf.ft $\to$ Nm), lực kích nâng xe, áp suất piston ben nâng, suất tiêu hao xăng/dầu trên 100km |
+| Nhóm | Tên bộ công cụ | Đối tượng ứng dụng | Số Tool | Các công thức tiêu biểu | Tài liệu chi tiết |
+| :---: | :--- | :--- | :---: | :--- | :---: |
+| **01** | [**Off-road & 4x4**](/technician/tools/01-offroad-4x4) | Độ xe vượt địa hình, xe thi đấu VOC/HTV, overlanding | 12 | Crawl ratio tổng, lực kéo tiếp tuyến bánh, góc tới/thoát/vượt đỉnh, tời kéo dốc, năng lượng pin tời | [Xem chi tiết $\to$](/technician/tools/01-offroad-4x4) |
+| **02** | [**Car Audio & SPL**](/technician/tools/02-car-audio-spl) | Độ âm thanh SQ/SQL/SPL, đóng thùng sub hơi/kín | 12 | Thể tích thùng chữ nhật, thể tích $V_b$ theo $Q_{tc}$, tần số cắt $F_3$, cổng hơi Helmholtz, công suất RMS amply | [Xem chi tiết $\to$](/technician/tools/02-car-audio-spl) |
+| **03** | [**Camping & RV**](/technician/tools/03-camping-rv) | Xe hoán cải Mobihome, xe dã ngoại Camper, Caravan | 12 | Cân bằng năng lượng ngày (Wh), dung lượng pin LiFePO4, dòng vào Inverter, sản lượng PVWatts pin mặt trời | [Xem chi tiết $\to$](/technician/tools/03-camping-rv) |
+| **04** | [**Performance & Tuning**](/technician/tools/04-performance-tuning) | Tinh chỉnh động cơ, độ tăng áp Turbo/Supercharger, map ECU | 12 | Dung tích động cơ $V_d$, tỷ số nén tĩnh $CR$, tốc độ piston trung bình $U_p$, BMEP 4 kỳ, lưu lượng kim phun | [Xem chi tiết $\to$](/technician/tools/04-performance-tuning) |
+| **05** | [**Drift & Racing**](/technician/tools/05-drift-racing) | Xe chạy track day, đua drift, drag strip 402m | 10 | Tỷ số truyền tổng, RPM khi lên số, chuyển tải dọc khi phanh, lực cản khí động $F_d$, độ cứng Wheel Rate | [Xem chi tiết $\to$](/technician/tools/05-drift-racing) |
+| **06** | [**Wheel & Tire**](/technician/tools/06-wheel-tire) | Nâng cấp mâm lốp, độ lồi mâm (ET Offset), canh vè | 10 | Đường kính danh nghĩa, chu vi lốp, sai số công-tơ-mét, backspacing danh nghĩa, độ ăn sâu mép trong/ngoài | [Xem chi tiết $\to$](/technician/tools/06-wheel-tire) |
+| **07** | [**Automotive Electrical**](/technician/tools/07-automotive-electrical) | Thợ điện ô tô, nâng cấp máy phát 210A, phân phối tải | 12 | Công suất DC/cơ máy phát, tỷ số pulley, RPM rotor, tổn hao đồng stator, tổn hao diode, sụt áp dây điện | [Xem chi tiết $\to$](/technician/tools/07-automotive-electrical) |
+| **08** | [**Battery & Storage**](/technician/tools/08-battery-storage) | Thiết kế pack pin LiFePO4 / Sodium-ion, BMS | 12 | Cấu hình ghép chuỗi Ns/song song Np, dòng xả C-rate, nội trở pack, nhiệt lượng phát sinh Joule $I^2R$, thời gian sạc CC | [Xem chi tiết $\to$](/technician/tools/08-battery-storage) |
+| **09** | [**Mechanical & Fabrication**](/technician/tools/09-mechanical-fabrication) | Chế tạo cơ khí, gá hàn khung xe, ben thủy lực nâng hạ | 12 | Ứng suất uốn $\sigma = My/I$, độ võng dầm $\delta$, lực xi lanh thủy lực, tuổi thọ vòng bi $L_{10}$ (ISO 281) | [Xem chi tiết $\to$](/technician/tools/09-mechanical-fabrication) |
+| **10** | [**EV & Hybrid**](/technician/tools/10-ev-hybrid) | Hoán cải xe điện (EV Retrofit), xe lai sạc ngoài | 10 | Công suất/mô-men mô-tơ điện, dòng bus DC cao áp, suất tiêu hao điện Wh/km, quãng đường xe điện, phanh tái sinh | [Xem chi tiết $\to$](/technician/tools/10-ev-hybrid) |
+| **11** | [**Detailing & Bodywork**](/technician/tools/11-detailing-bodywork) | Sơn phủ chống xước Polyurea, dán cách âm, làm đồng | 11 | Diện tích bề mặt, độ dày màng sơn khô (DFT)/ướt (WFT), lượng sơn cần mua, tỷ lệ pha 2 thành phần A:B, dẫn nhiệt | [Xem chi tiết $\to$](/technician/tools/11-detailing-bodywork) |
+| **12** | [**Garage & Maintenance**](/technician/tools/12-garage-maintenance) | Bảo dưỡng định kỳ, quản lý chi phí vận hành đội xe | 10 | Quy đổi mô-men siết (lbf.ft $\to$ Nm), lực kích nâng xe, áp suất piston ben nâng, suất tiêu hao xăng/dầu trên 100km | [Xem chi tiết $\to$](/technician/tools/12-garage-maintenance) |
 
 ---
 
