@@ -24,6 +24,8 @@ graph TD
 
 ## 🔄 Bảng quy đổi nhanh giữa các đơn vị áp suất
 
+<TirePressureConverter />
+
 Tại Việt Nam, đồng hồ bơm lốp tại các garage hoặc máy bơm mini thường dùng nhiều đơn vị khác nhau:
 
 | Đơn vị | Ký hiệu | Tỷ lệ quy đổi tương đương | Ứng dụng phổ biến |
