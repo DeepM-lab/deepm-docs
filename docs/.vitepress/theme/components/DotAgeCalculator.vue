@@ -34,21 +34,23 @@
       <div class="dot-result-header">
         <div class="dot-badge">{{ parsedData.badge }}</div>
         <div class="dot-age-highlight">
-          Đã xuất xưởng: <strong>{{ parsedData.ageText }}</strong>
+          <span v-if="parsedData.isFuture || parsedData.isInvalid">Trạng thái: </span>
+          <span v-else>Đã xuất xưởng: </span>
+          <strong>{{ parsedData.ageText }}</strong>
         </div>
       </div>
 
       <div class="dot-details-grid">
         <div class="detail-item">
-          <span class="detail-label">Thời điểm sản xuất:</span>
-          <span class="detail-val">Tuần {{ parsedData.week }} (Khoảng tháng {{ parsedData.month }}/{{ parsedData.year }})</span>
+          <span class="detail-label">{{ parsedData.isFuture ? 'Thời điểm ghi trên lốp:' : (parsedData.isInvalid ? 'Mã tuần nhập:' : 'Thời điểm sản xuất:') }}</span>
+          <span class="detail-val">Tuần {{ parsedData.week }}<template v-if="parsedData.month > 0"> (Khoảng tháng {{ parsedData.month }}/{{ parsedData.year }})</template></span>
         </div>
         <div class="detail-item">
           <span class="detail-label">Năm dương lịch:</span>
           <span class="detail-val">{{ parsedData.year }}</span>
         </div>
         <div class="detail-item">
-          <span class="detail-label">Tình trạng cao su:</span>
+          <span class="detail-label">{{ (parsedData.isFuture || parsedData.isInvalid) ? 'Đánh giá tính hợp lệ:' : 'Tình trạng cao su:' }}</span>
           <span class="detail-val">{{ parsedData.statusDesc }}</span>
         </div>
       </div>
@@ -82,53 +84,92 @@ const parsedData = computed(() => {
   const rawYear = parseInt(dotInput.value.slice(2, 4), 10);
 
   if (isNaN(week) || isNaN(rawYear)) return null;
-  if (week < 1 || week > 53) return null;
 
   const fullYear = 2000 + rawYear;
-  // approximate month
-  const month = Math.min(12, Math.max(1, Math.ceil(week / 4.33)));
 
-  // Current date
-  const now = new Date();
-  const currentYear = now.getFullYear();
-  const currentMonth = now.getMonth() + 1;
-
-  let totalMonths = (currentYear - fullYear) * 12 + (currentMonth - month);
-  if (totalMonths < 0) totalMonths = 0;
-
-  const years = Math.floor(totalMonths / 12);
-  const remainingMonths = totalMonths % 12;
-
-  let ageText = '';
-  if (years > 0 && remainingMonths > 0) {
-    ageText = `${years} năm ${remainingMonths} tháng`;
-  } else if (years > 0) {
-    ageText = `${years} năm`;
-  } else {
-    ageText = `${remainingMonths} tháng`;
+  // 1. Kiểm tra tuần hợp lệ (1 đến 53)
+  if (week < 1 || week > 53) {
+    return {
+      week,
+      month: 0,
+      year: fullYear,
+      ageText: 'Mã không hợp lệ',
+      badge: 'MÃ KHÔNG HỢP LỆ (TUẦN SAI)',
+      statusClass: 'status-danger',
+      statusDesc: `Tuần "${week}" không tồn tại (Một năm tối đa 52 - 53 tuần)`,
+      advice: 'Vui lòng kiểm tra lại 2 chữ số đầu tiên biểu thị tuần sản xuất trên hông lốp xe.',
+      isFuture: false,
+      isInvalid: true,
+    };
   }
 
-  // Classify safety
+  const now = new Date();
+  // Ước tính ngày sản xuất: Ngày 1/1 của năm + (tuần - 0.5) * 7 ngày (chuẩn DeepM Lab)
+  const mfgDate = new Date(fullYear, 0, 1);
+  mfgDate.setDate(mfgDate.getDate() + Math.round((week - 0.5) * 7));
+  const month = Math.min(12, Math.max(1, mfgDate.getMonth() + 1));
+
+  // 2. Kiểm tra nếu thời điểm sản xuất nằm ở tương lai
+  const diffMs = now.getTime() - mfgDate.getTime();
+  if (diffMs < 0) {
+    return {
+      week,
+      month,
+      year: fullYear,
+      ageText: 'Thời điểm tương lai',
+      badge: 'CHƯA SẢN XUẤT (TƯƠNG LAI)',
+      statusClass: 'status-future',
+      statusDesc: `Tuần ${week} năm ${fullYear} chưa diễn ra so với thời điểm hiện tại!`,
+      advice: `Thời điểm này chưa xuất hiện trên lịch thực tế. Vui lòng kiểm tra lại 4 chữ số dập nổi cạnh ký hiệu DOT trên thành lốp (hoặc bạn có thể đang đọc nhầm số khác).`,
+      isFuture: true,
+      isInvalid: false,
+    };
+  }
+
+  // 3. Tính tuổi chính xác theo năm và tháng theo lịch thực tế (chuẩn DeepM Lab)
+  const ageYears = Math.round((diffMs / (365.25 * 24 * 3600 * 1000)) * 10) / 10;
+
+  let years = now.getFullYear() - mfgDate.getFullYear();
+  let months = now.getMonth() - mfgDate.getMonth();
+  if (now.getDate() < mfgDate.getDate()) {
+    months--;
+  }
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+  if (years < 0) {
+    years = 0;
+    months = 0;
+  }
+
+  const ageText = years > 0 
+    ? `${years} năm ${months} tháng tuổi` 
+    : months > 0 
+      ? `${months} tháng tuổi` 
+      : 'Dưới 1 tháng tuổi';
+
+  // 4. Phân loại mức độ an toàn theo tiêu chuẩn quốc tế và DeepM Lab
   let statusClass = 'status-optimal';
-  let badge = 'CAO SU TỐI ƯU (DƯỚI 3 NĂM)';
+  let badge = 'MỚI SẢN XUẤT (TỐI ƯU)';
   let statusDesc = 'Độ đàn hồi dẻo dai, bám đường tuyệt đối';
   let advice = 'Lốp còn rất mới, độ an toàn hoàn hảo. Duy trì bơm đúng áp suất và cân bằng động định kỳ.';
 
-  if (totalMonths >= 72) { // 6+ years
+  if (ageYears >= 6) { // >= 6 năm: Hết hạn sử dụng kỹ thuật
     statusClass = 'status-danger';
-    badge = 'HẾT HẠN AN TOÀN (TRÊN 6 NĂM)';
+    badge = 'HẾT HẠN (QUÁ 6 NĂM)';
     statusDesc = 'Cao su đã lão hóa nặng, chai cứng hoàn toàn';
-    advice = 'Khuyến nghị thay mới khẩn cấp! Dù gai lốp còn dày, nguy cơ tách lớp bố thép và nổ lốp ở tốc độ cao là rất lớn.';
-  } else if (totalMonths >= 60) { // 5-6 years
-    statusClass = 'status-high';
-    badge = 'LÃO HÓA (5 - 6 NĂM)';
-    statusDesc = 'Bắt đầu có vết rạn chân chim, giảm bám đường ướt';
-    advice = 'Cần mang xe đến garage để kỹ thuật viên kiểm tra độ đàn hồi, rạn nứt rãnh gai và lên kế hoạch thay lốp.';
-  } else if (totalMonths >= 36) { // 3-5 years
+    advice = 'Khuyến nghị thay mới khẩn cấp! Dù gai lốp còn dày, cao su đã mất đàn hồi, nguy cơ nứt rạn hông hoặc tách lớp bố thép khi chạy tốc độ cao là rất lớn.';
+  } else if (ageYears >= 5) { // 5 - 6 năm: Cần theo dõi định kỳ
     statusClass = 'status-warning';
-    badge = 'BÌNH THƯỜNG (3 - 5 NĂM)';
-    statusDesc = 'Cao su bắt đầu có dấu hiệu lão hóa tự nhiên';
-    advice = 'Theo dõi kiểm tra 6 tháng/lần. Đảo lốp định kỳ mỗi 8.000 - 10.000 km để đảm bảo 4 bánh mòn đều.';
+    badge = 'CẦN THEO DÕI (5 - 6 NĂM TUỔI)';
+    statusDesc = 'Bắt đầu có dấu hiệu chai cứng hoặc rạn chân chim rãnh gai';
+    advice = 'Lốp đã đạt 5 - 6 năm tuổi. Dù gai lốp còn dày, hợp chất cao su đã bắt đầu chai cứng, nên mang xe đến garage kiểm tra định kỳ hàng năm.';
+  } else if (ageYears >= 3) { // 3 - 5 năm: Đã qua sử dụng, còn tốt
+    statusClass = 'status-good';
+    badge = 'CÒN HẠN (CHẤT LƯỢNG TỐT)';
+    statusDesc = 'Đã qua sử dụng nhưng cao su còn độ đàn hồi tốt';
+    advice = 'Lốp trong tình trạng vận hành ổn định. Đảo lốp định kỳ mỗi 8.000 - 10.000 km để đảm bảo 4 bánh mòn đều.';
   }
 
   return {
@@ -140,6 +181,8 @@ const parsedData = computed(() => {
     statusClass,
     statusDesc,
     advice,
+    isFuture: false,
+    isInvalid: false,
   };
 });
 </script>
@@ -315,6 +358,15 @@ const parsedData = computed(() => {
   color: #000;
 }
 
+.status-good {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.35);
+}
+.status-good .dot-badge {
+  background: #10b981;
+  color: #000;
+}
+
 .status-warning {
   background: rgba(234, 179, 8, 0.1);
   border-color: rgba(234, 179, 8, 0.35);
@@ -339,6 +391,15 @@ const parsedData = computed(() => {
 }
 .status-danger .dot-badge {
   background: #ef4444;
+  color: #fff;
+}
+
+.status-future {
+  background: rgba(244, 63, 94, 0.12);
+  border-color: rgba(244, 63, 94, 0.45);
+}
+.status-future .dot-badge {
+  background: #f43f5e;
   color: #fff;
 }
 
