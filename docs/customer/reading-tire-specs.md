@@ -77,11 +77,14 @@ Ví dụ chuỗi ký hiệu phổ biến trên xe con: `P 205 / 55 R 16 91 V XL`
 
 Chỉ số tải trọng (Load Index - Li) cho biết khối lượng tối đa (kg) mà 1 chiếc lốp có thể gánh được an toàn khi bơm đúng áp suất chuẩn:
 
-*Ước tính tải trọng tối đa cả xe:*
+::: info 💡 Công thức ước tính nhanh tải trọng tối đa cả xe
+$$
+W_{\text{total}} \approx W_{\text{tire}} \times 4
+$$
 
-$$
-\text{Tổng tải an toàn cả xe (kg)} \approx \text{Tải 1 lốp (kg)} \times 4
-$$
+* **Tổng tải an toàn cả xe (kg)** $\approx$ **Khả năng chịu tải 1 lốp (kg)** $\times$ **4 bánh**
+* **Ví dụ thực tế**: Lốp có chỉ số tải trọng **91** (chịu được **615 kg**/lốp) $\rightarrow$ Tổng tải trọng an toàn tối đa của cả xe là: $615 \times 4 = 2.460\text{ kg}$.
+:::
 
 | Li | Tải 1 lốp (kg) | Tải 1 lốp (lbs) | Tổng tải 4 bánh (kg) | | Li | Tải 1 lốp (kg) | Tải 1 lốp (lbs) | Tổng tải 4 bánh (kg) |
 |:---:|:---:|:---:|:---:|---|:---:|:---:|:---:|:---:|

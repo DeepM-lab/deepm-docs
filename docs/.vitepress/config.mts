@@ -92,7 +92,7 @@ export default withMermaid(
           text: 'Hệ sinh thái DeepM',
           items: [
             { text: 'DeepM Toolbox Engineering', link: 'https://toolbox-engineering.vercel.app/' },
-            { text: 'Marketing Tracker', link: 'https://marketing-tracker-navy.vercel.app/' },
+            { text: 'Marketing Tracker', link: 'https://deepm.autoerp.vn/marketing_report/listing/' },
             { text: 'Website DeepM.vn', link: 'https://deepm.vn' },
           ]
         }
@@ -177,9 +177,9 @@ export default withMermaid(
             text: 'Dành cho Marketing & Quản trị',
             items: [
               { text: 'Tổng quan Marketing Portal', link: '/marketing/' },
-              { text: '1. Nhập & Nộp link bài truyền thông', link: '/marketing/submit-post' },
-              { text: '2. Theo dõi bài viết của tôi (/my-posts)', link: '/marketing/tracking-posts' },
-              { text: '3. Quản trị viên & Phân quyền (/admin/staff)', link: '/marketing/admin-guide' },
+              { text: '1. Khai báo & Nộp báo cáo bài đăng', link: '/marketing/submit-post' },
+              { text: '2. Danh sách bài đăng & Báo cáo tương tác', link: '/marketing/tracking-posts' },
+              { text: '3. Hướng dẫn dành cho Quản trị viên (Admin)', link: '/marketing/admin-guide' },
             ]
           }
         ]

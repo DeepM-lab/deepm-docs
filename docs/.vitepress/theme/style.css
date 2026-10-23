@@ -10,16 +10,50 @@
   --vp-home-hero-image-filter: blur(48px);
 }
 
+.mermaid {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
 .mermaid svg {
+  max-width: 100% !important;
+  height: auto !important;
   font-family: var(--vp-font-family-base) !important;
+}
+
+.mermaid foreignObject {
+  overflow: visible !important;
+}
+
+.mermaid foreignObject div {
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+  text-align: center !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .mermaid .nodeLabel,
 .mermaid .edgeLabel,
 .mermaid .cluster-label,
 .mermaid text,
-.mermaid span {
+.mermaid span,
+.mermaid p {
   font-family: var(--vp-font-family-base) !important;
+  font-size: 13px !important;
+}
+
+.mermaid .edgeLabel {
+  font-size: 12px !important;
+}
+
+.mermaid .cluster-label span {
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
 }
 
 .dark {
