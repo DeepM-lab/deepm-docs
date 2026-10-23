@@ -34,23 +34,11 @@ export default withMermaid(
     },
 
     vite: {
+      ssr: {
+        noExternal: ['mark.js']
+      },
       build: {
-        chunkSizeWarningLimit: 1200,
-        rollupOptions: {
-          output: {
-            manualChunks(id) {
-              if (id.includes('.vitepress') || id.includes('node_modules/vue')) {
-                return;
-              }
-              if (id.includes('mermaid') || id.includes('cytoscape')) {
-                return 'vendor-visual';
-              }
-              if (id.includes('mathjax')) {
-                return 'vendor-math';
-              }
-            }
-          }
-        }
+        chunkSizeWarningLimit: 2500
       }
     },
 
