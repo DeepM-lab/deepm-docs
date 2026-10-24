@@ -13,6 +13,9 @@ export default withMermaid(
     },
     
     head: [
+      ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+      ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+      ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=JetBrains+Mono:wght@400;500;600&display=swap' }],
       ['link', { rel: 'icon', href: '/favicon.ico' }],
       ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
       ['meta', { name: 'theme-color', content: '#f59e0b' }],
@@ -30,7 +33,11 @@ export default withMermaid(
     ],
 
     markdown: {
-      math: true
+      math: true,
+      config: (md) => {
+        md.renderer.rules.table_open = () => '<div class="table-responsive-wrapper"><table>';
+        md.renderer.rules.table_close = () => '</table></div>';
+      }
     },
 
     vite: {
@@ -73,13 +80,13 @@ export default withMermaid(
 
       nav: [
         { text: 'Trang chủ', link: '/' },
-        { text: 'Khách hàng', link: '/customer/' },
-        { text: 'Thợ máy & Kỹ thuật', link: '/technician/' },
-        { text: 'Marketing & Quản trị', link: '/marketing/' },
+        { text: 'Khách hàng', link: '/customer/', activeMatch: '^/customer/' },
+        { text: 'Thợ máy & Kỹ thuật', link: '/technician/', activeMatch: '^/technician/' },
+        { text: 'Marketing & Quản trị', link: '/marketing/', activeMatch: '^/marketing/' },
         {
           text: 'Hệ sinh thái DeepM',
           items: [
-            { text: 'DeepM Toolbox Engineering', link: 'https://toolbox-engineering.vercel.app/' },
+            { text: 'DeepM Toolbox Engineering', link: 'https://deepm.vn/giai-ma-lop-xe' },
             { text: 'Marketing Tracker', link: 'https://deepm.autoerp.vn/marketing_report/listing/' },
             { text: 'Website DeepM.vn', link: 'https://deepm.vn' },
           ]

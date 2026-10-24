@@ -65,6 +65,8 @@ $$
 
 ### Bảng đối chiếu 71 chỉ số tải trọng chuẩn hóa (60 đến 130):
 
+<TableSearchFilter placeholder="Tìm nhanh chỉ số Li (60..130), số kg tải trọng hoặc lbs...">
+
 | Li | Tải 1 lốp (kg) | Tải 1 lốp (lbs) | Tổng tải 4 bánh (kg) | | Li | Tải 1 lốp (kg) | Tải 1 lốp (lbs) | Tổng tải 4 bánh (kg) |
 |:---:|:---:|:---:|:---:|---|:---:|:---:|:---:|:---:|
 | **60** | 250 kg | 551 lbs | 1.000 kg | | **96** | 710 kg | 1.565 lbs | 2.840 kg |
@@ -104,14 +106,16 @@ $$
 | **94** | 670 kg | 1.477 lbs | 2.680 kg | | **130** | 1.900 kg | 4.189 lbs | 7.600 kg |
 | **95** | 690 kg | 1.521 lbs | 2.760 kg | | — | — | — | — |
 
+</TableSearchFilter>
+
 ### ⚠️ Quy tắc an toàn kỹ thuật xưởng về Tải trọng:
 
 1. **Lốp xe con tiêu chuẩn (Standard Load - SL)**: Đạt mức tải tối đa danh định ở áp suất chuẩn **2.5 bar (36 PSI)**. Không bơm vượt quá áp suất khuyến cáo để tránh hiện tượng mòn vẹt chính giữa mặt lốp.
 2. **Lốp gia cường tải trọng (Extra Load - XL / Reinforced - RF)**: Cấu trúc khung sợi và tanh lốp được gia cố nhiều lớp đai, cho phép bơm áp suất lên tới **2.9 bar (42 PSI)** nhằm nâng mức tải danh định thêm **10–15%** so với lốp SL cùng kích cỡ. Rất phổ biến trên các dòng SUV hạng trung và xe gầm cao.
 3. **Lốp tải trọng siêu cao cho xe điện (High Load Capacity - HL)**: Chuẩn lốp thế hệ mới (bắt đầu bằng tiền tố `HL`, ví dụ `HL 245/45R19 101Y`). Lốp HL chịu được áp suất vận hành lên tới **3.2 bar (46 PSI)**, tải trọng tăng thêm xấp xỉ **25%** so với lốp tiêu chuẩn SL nhằm gánh trọn vẹn khối lượng nặng nề của cụm pin xe thuần điện (EV).
 4. **Quy tắc lốp đôi (Dual Fitment / Twins)**: Trên các dòng xe thương mại chở khách hoặc xe tải nhẹ (Ford Transit, Hyundai Solati, Isuzu QKR), nếu hông lốp ghi ký hiệu kép dạng `115/113R`:
-   - Số đầu (**115**): Áp dụng khi lắp bánh đơn trục trước $\to$ Tải tối đa là **1.215 kg/bánh**.
-   - Số sau (**113**): Áp dụng khi lắp bánh đôi trục sau $\to$ Tải tối đa tính là **1.150 kg/bánh**.
+   - Số đầu (**115**): Áp dụng khi lắp bánh đơn trục trước → Tải tối đa là **1.215 kg/bánh**.
+   - Số sau (**113**): Áp dụng khi lắp bánh đôi trục sau → Tải tối đa tính là **1.150 kg/bánh**.
    - *Nguyên lý kỹ thuật*: Mức giảm tải 5–7% cho bánh đôi là bắt buộc để bù trừ dung sai mặt đường lồi lõm hoặc áp suất không cân bằng giữa 2 lốp kề nhau, tránh quá tải cục bộ làm nổ lốp.
 5. **Cảnh báo bắt buộc khi đăng kiểm**: Tuyệt đối không thay thế lốp có chỉ số tải trọng nhỏ hơn lốp nguyên bản do nhà máy sản xuất xe chỉ định.
 
@@ -181,7 +185,7 @@ Theo tiêu chuẩn châu Âu ETRTO, khi xe vận hành liên tục ở dải v�
 
 ---
 
-## 🧭 4. Hướng dẫn & Bảng quy đổi kích thước lốp địa hình Flotation (Hệ Inch $\to$ Hệ Mét mm)
+## 🧭 4. Hướng dẫn & Bảng quy đổi kích thước lốp địa hình Flotation (Hệ Inch → Hệ Mét mm)
 
 ### 1. Cấu trúc danh định lốp Flotation:
 

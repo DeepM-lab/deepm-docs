@@ -36,6 +36,8 @@ Ví dụ dập trên hông lốp:  TREADWEAR 340   TRACTION A   TEMPERATURE A
 
 **OE** viết tắt của *Original Equipment* (Lốp theo xe xuất xưởng). Các hãng xe sang danh tiếng (Mercedes-Benz, BMW, Porsche, Ferrari, Audi, Tesla...) thường bắt tay với các tập đoàn sản xuất lốp lớn (Michelin, Pirelli, Continental, Goodyear) trong 2 đến 3 năm để tinh chỉnh riêng hợp chất cao su, độ cứng vách hông lốp, rãnh chống ồn và cấu trúc chịu lực phù hợp hoàn hảo với hệ thống treo của xe họ:
 
+<TableSearchFilter placeholder="Tra cứu nhanh theo hãng xe (Porsche, Mercedes, BMW, Ferrari...) hoặc mã OE...">
+
 | Hãng xe | Ký hiệu OE trên hông lốp | Tên gọi chuẩn | Đặc tính kỹ thuật & Lợi ích thực tế cho chủ xe |
 |:---|:---:|:---|:---|
 | **Porsche** | **N0, N1, N2, N3, N4, N5, N6** | Porsche Approved (Thế hệ N) | Ký hiệu số chỉ thế hệ cải tiến cao su. Hông lốp cực cứng, chịu lực vặn xoắn khi vào cua gắt ở tốc độ cao trên dòng xe thể thao Porsche. |
@@ -76,6 +78,8 @@ Ví dụ dập trên hông lốp:  TREADWEAR 340   TRACTION A   TEMPERATURE A
 | **General Motors** | **TPC Spec** | Tire Performance Criteria | Mã kiểm định chất lượng gồm 4 chữ số của GM cho Chevrolet Corvette, Cadillac V-Blackwing. |
 | **Hyundai N** | **HN** | Hyundai N Performance | Phát triển riêng cùng Pirelli/Michelin cho xe thể thao i30 N, Elantra N, Ioniq 5 N. |
 | **Volkswagen** | **+ (Dấu cộng)** | Volkswagen Original | Chứng nhận kỹ thuật cho xe du lịch Volkswagen (Golf GTI, Passat, Touareg). |
+
+</TableSearchFilter>
 
 ---
 

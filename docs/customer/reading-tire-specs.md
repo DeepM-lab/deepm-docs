@@ -83,8 +83,10 @@ W_{\text{total}} \approx W_{\text{tire}} \times 4
 $$
 
 * **Tổng tải an toàn cả xe (kg)** $\approx$ **Khả năng chịu tải 1 lốp (kg)** $\times$ **4 bánh**
-* **Ví dụ thực tế**: Lốp có chỉ số tải trọng **91** (chịu được **615 kg**/lốp) $\rightarrow$ Tổng tải trọng an toàn tối đa của cả xe là: $615 \times 4 = 2.460\text{ kg}$.
+* **Ví dụ thực tế**: Lốp có chỉ số tải trọng **91** (chịu được **615 kg**/lốp) → Tổng tải trọng an toàn tối đa của cả xe là: $615 \times 4 = 2.460\text{ kg}$.
 :::
+
+<TableSearchFilter placeholder="Tìm nhanh chỉ số Li (60..130), số kg tải trọng hoặc lbs...">
 
 | Li | Tải 1 lốp (kg) | Tải 1 lốp (lbs) | Tổng tải 4 bánh (kg) | | Li | Tải 1 lốp (kg) | Tải 1 lốp (lbs) | Tổng tải 4 bánh (kg) |
 |:---:|:---:|:---:|:---:|---|:---:|:---:|:---:|:---:|
@@ -124,6 +126,8 @@ $$
 | **93** | 650 kg | 1.433 lbs | 2.600 kg | | **129** | 1.850 kg | 4.079 lbs | 7.400 kg |
 | **94** | 670 kg | 1.477 lbs | 2.680 kg | | **130** | 1.900 kg | 4.189 lbs | 7.600 kg |
 | **95** | 690 kg | 1.521 lbs | 2.760 kg | | — | — | — | — |
+
+</TableSearchFilter>
 
 ### 💡 Lưu ý quan trọng cho chủ xe:
 * **Lốp tiêu chuẩn (SL)**: Áp suất bơm chuẩn thường là 2.2 – 2.5 bar (32 – 36 PSI).
@@ -195,7 +199,7 @@ Ví dụ: `35 x 12.50 R 17 LT`
 | **37x12.50R17 LT** | 940 mm | 318 mm | **325/80R17** | Xe offroad chuyên nghiệp gầm cầu lớn |
 
 ::: warning ⚠️ Cảnh báo an toàn & Đăng kiểm cho chủ xe
-* **Sai số đồng hồ ODO**: Khi độ từ lốp zin 31" lên 35", đường kính bánh tăng thêm **12.9%**. Đồng hồ trên taplo xe chỉ 100 km/h nhưng thực tế bạn đang chạy **112.9 km/h** $\to$ Rất dễ bị bắn tốc độ phạt nguội trên cao tốc!
+* **Sai số đồng hồ ODO**: Khi độ từ lốp zin 31" lên 35", đường kính bánh tăng thêm **12.9%**. Đồng hồ trên taplo xe chỉ 100 km/h nhưng thực tế bạn đang chạy **112.9 km/h** → Rất dễ bị bắn tốc độ phạt nguội trên cao tốc!
 * **Bề rộng mâm**: Lốp bản rộng 12.50 inch bắt buộc phải dùng mâm độ rộng từ 8.5" đến 10", không được ép vào mâm zin hẹp bản 7"–7.5".
 * **Đăng kiểm**: Tại Việt Nam, quy định đăng kiểm yêu cầu đúng kích cỡ lốp ghi trong Giấy chứng nhận kiểm định an toàn kỹ thuật. Trước kỳ đăng kiểm, chủ xe nên kiểm tra kỹ sổ đăng kiểm hoặc đưa xe về cỡ lốp nguyên bản.
 :::

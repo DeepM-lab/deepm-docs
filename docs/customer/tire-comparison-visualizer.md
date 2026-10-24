@@ -52,5 +52,5 @@ Nếu bạn chỉ đổi mâm mà không hạ tỷ lệ hông lốp tương ứn
 ---
 
 ::: tip 🔗 Thực hành trực tiếp
-Mở công cụ so sánh trực quan tại [DeepM Toolbox Engineering](https://toolbox-engineering.vercel.app/) để tính toán kích thước lốp của bạn ngay.
+Mở công cụ so sánh trực quan tại [DeepM Toolbox Engineering](https://deepm.vn/giai-ma-lop-xe) để tính toán kích thước lốp của bạn ngay.
 :::

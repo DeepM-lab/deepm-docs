@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme';
 import type { App } from 'vue';
 import TirePressureConverter from './components/TirePressureConverter.vue';
 import DotAgeCalculator from './components/DotAgeCalculator.vue';
+import TableSearchFilter from './components/TableSearchFilter.vue';
 import './style.css';
 
 export default {
@@ -9,5 +10,6 @@ export default {
   enhanceApp({ app }: { app: App }) {
     app.component('TirePressureConverter', TirePressureConverter);
     app.component('DotAgeCalculator', DotAgeCalculator);
+    app.component('TableSearchFilter', TableSearchFilter);
   }
 };

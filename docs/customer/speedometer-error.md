@@ -56,5 +56,5 @@ Ví dụ trường hợp nâng từ cỡ `205/55R16` lên cỡ `225/50R17` (Đư
 ---
 
 ::: tip 🔗 Tra cứu sai số thực tế
-Truy cập [DeepM Toolbox Engineering](https://toolbox-engineering.vercel.app/) để tính toán sai số ODO cho cỡ lốp dự kiến của bạn.
+Truy cập [DeepM Toolbox Engineering](https://deepm.vn/giai-ma-lop-xe) để tính toán sai số ODO cho cỡ lốp dự kiến của bạn.
 :::

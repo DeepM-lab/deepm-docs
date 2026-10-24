@@ -323,7 +323,7 @@ $$
 | :---: | :--- | :---: | :--- |
 | $F_{\text{brake}}$ | Lực hãm phanh phát động bởi mô-tơ điện đóng vai trò máy phát | Newton (N) | Lực ghìm xe làm chậm chuyển động |
 | $v$ | Tốc độ tức thời của xe tại thời điểm rà phanh | m/s | $v = \frac{v_{\text{km/h}}}{3{,}6}$ |
-| $\eta_{\text{regen}}$ | Hiệu suất chuyển đổi cơ - điện - hóa thu hồi vào pin | Thập phân ($0..1$) | Thường đạt $0{,}60 - 0{,}75$ (Mô-tơ $\to$ Inverter $\to$ Pin) |
+| $\eta_{\text{regen}}$ | Hiệu suất chuyển đổi cơ - điện - hóa thu hồi vào pin | Thập phân ($0..1$) | Thường đạt $0{,}60 - 0{,}75$ (Mô-tơ → Inverter → Pin) |
 
 ### 3. Phạm vi áp dụng & Cảnh báo an toàn (Safety & Limitations)
 

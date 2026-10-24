@@ -69,8 +69,8 @@ features:
 
 | Nhóm đối tượng | Mục tiêu chính | Tính năng hướng dẫn trọng tâm | Ứng dụng liên kết |
 | :--- | :--- | :--- | :--- |
-| **1. Khách hàng (Chủ xe)** | Tra cứu & đối chiếu kích cỡ lốp an toàn | - Đọc và giải mã ký hiệu hông lốp.<br>- Mô phỏng trực quan 2 lốp đè lên nhau (Zin vs Độ).<br>- Bảng sai số đồng hồ tốc độ ODO (±3%). | [DeepM Toolbox Engineering](https://toolbox-engineering.vercel.app/) |
-| **2. Thợ máy & Kỹ thuật** | Đo lường, tính toán chuyên sâu cho xưởng | - Bàn tính 135 công thức kỹ thuật ô tô.<br>- Tra cứu Bách khoa toàn thư lốp xe & chẩn đoán góc mòn.<br>- Lưu trữ lịch sử và xuất file báo cáo Excel. | [DeepM Toolbox Engineering](https://toolbox-engineering.vercel.app/) |
+| **1. Khách hàng (Chủ xe)** | Tra cứu & đối chiếu kích cỡ lốp an toàn | - Đọc và giải mã ký hiệu hông lốp.<br>- Mô phỏng trực quan 2 lốp đè lên nhau (Zin vs Độ).<br>- Bảng sai số đồng hồ tốc độ ODO (±3%). | [DeepM Toolbox Engineering](https://deepm.vn/giai-ma-lop-xe) |
+| **2. Thợ máy & Kỹ thuật** | Đo lường, tính toán chuyên sâu cho xưởng | - Bàn tính 135 công thức kỹ thuật ô tô.<br>- Tra cứu Bách khoa toàn thư lốp xe & chẩn đoán góc mòn.<br>- Lưu trữ lịch sử và xuất file báo cáo Excel. | [DeepM Toolbox Engineering](https://deepm.vn/tho-may) |
 | **3. Marketing & Admin** | Quản lý & báo cáo hiệu quả truyền thông | - Nộp báo cáo bài đăng đa kênh (Facebook, TikTok, Website...).<br>- Theo dõi danh sách & lọc theo nhân sự.<br>- Dành riêng Admin: Báo cáo tổng thể, xuất dữ liệu Excel, quản lý danh mục khai báo. | [Marketing Tracker](https://deepm.autoerp.vn/marketing_report/listing/) |
 
 ::: tip 💡 Mẹo tra cứu nhanh

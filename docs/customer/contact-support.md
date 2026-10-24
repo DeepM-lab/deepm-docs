@@ -6,7 +6,7 @@ Nếu bạn có bất kỳ thắc mắc nào về thông số lốp xe, phương
 
 ## 🛠️ Các kênh hỗ trợ khách hàng chính thức
 
-* **Cổng công cụ trực tuyến**: [DeepM Toolbox Engineering](https://toolbox-engineering.vercel.app/)
+* **Cổng công cụ trực tuyến**: [DeepM Toolbox Engineering](https://deepm.vn/giai-ma-lop-xe)
 * **Website thương hiệu**: [DeepM.vn](https://deepm.vn)
 * **Khu vực phản hồi trực tiếp**: Cuộn xuống chân trang của bất kỳ công cụ nào tại mục **"Tư vấn & Hỗ trợ kỹ thuật"**.
 * **Hotline hỗ trợ kỹ thuật**: Liên hệ trực tiếp số hotline hiển thị tại phần chân trang ứng dụng để được giải đáp khẩn cấp về an toàn lốp xe.
@@ -38,4 +38,4 @@ graph TD
 ## ⏱️ Thời gian phản hồi
 
 * Đội ngũ kỹ thuật viên DeepM tiếp nhận và phản hồi các yêu cầu tư vấn kỹ thuật trong vòng **15 - 30 phút** trong giờ làm việc hành chính.
-* Các công cụ tính toán tự động trên [DeepM Toolbox](https://toolbox-engineering.vercel.app/) luôn sẵn sàng phục vụ bạn **24/7 hoàn toàn miễn phí**.
+* Các công cụ tính toán tự động trên [DeepM Toolbox](https://deepm.vn/tho-may) luôn sẵn sàng phục vụ bạn **24/7 hoàn toàn miễn phí**.

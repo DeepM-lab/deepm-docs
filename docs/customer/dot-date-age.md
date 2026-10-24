@@ -28,7 +28,7 @@ Nếu bạn thấy mã chỉ có **3 chữ số** (ví dụ `329`), lốp đó �
 
 <DotAgeCalculator />
 
-1. Mở công cụ [DeepM Toolbox Engineering](https://toolbox-engineering.vercel.app/).
+1. Mở công cụ [DeepM Toolbox Engineering](https://deepm.vn/giai-ma-lop-xe).
 2. Chọn tab **Giải mã thông số lốp**.
 3. Cuộn xuống ô **Tra cứu mã năm sản xuất DOT (4 chữ số)** hoặc gõ kèm chuỗi lốp đầy đủ (Ví dụ: `... DOT 4721 ...`).
 4. Nhập 4 chữ số (ví dụ: `4721` hoặc `1224`).

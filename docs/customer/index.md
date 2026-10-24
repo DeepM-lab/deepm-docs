@@ -52,5 +52,5 @@ graph TD
 ---
 
 ::: tip 🔗 Truy cập nhanh công cụ
-Bạn có thể mở ngay công cụ giải mã lốp xe trực tuyến tại [DeepM Toolbox Engineering](https://toolbox-engineering.vercel.app/) để vừa đọc hướng dẫn vừa thực hành song song.
+Bạn có thể mở ngay công cụ giải mã lốp xe trực tuyến tại [DeepM Toolbox Engineering](https://deepm.vn/giai-ma-lop-xe) để vừa đọc hướng dẫn vừa thực hành song song.
 :::

@@ -41,6 +41,6 @@ docs/technician/
 ---
 
 ::: tip 🔗 Trải nghiệm công cụ trực tiếp
-* Khởi chạy bộ bàn tính kỹ thuật tại [DeepM Engineering Toolbox](https://toolbox-engineering.vercel.app/).
+* Khởi chạy bộ bàn tính kỹ thuật tại [DeepM Engineering Toolbox](https://deepm.vn/tho-may).
 * Tất cả công thức toán học và đơn vị đã được chuẩn hóa theo hệ SI và đối chiếu với các nguồn tiêu chuẩn quốc tế (EngineeringToolbox, NASA Aeronautics, Battery University, SKF Rolling Bearings).
 :::
